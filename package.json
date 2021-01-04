@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && npm run deploy",
     "lint": "vue-cli-service lint",
-    "deploy": "rm -rf docs ; cp -r dist docs"
+    "deploy": "cd dist/ && git init ; git remote add origin git@github.com:geff21st/codeuet.git ; git checkout -b demo ; git checkout demo ; git add -A && git commit -m 'demo' ; git push --force origin demo"
   },
   "dependencies": {
     "@chenfengyuan/vue-qrcode": "^1.0.2",
